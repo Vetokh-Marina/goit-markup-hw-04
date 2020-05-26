@@ -24,18 +24,26 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
+  align-items: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
   text-decoration: none;
   border-radius: 4px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   padding: 11px 32px;
-  display: inline-block;
+  display: inline-flex;
   min-width: 136px;
 }
-
+/* Добавление иконки на кнопку */
+.button.primary::after{
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url('../img/icon\ send.svg');
+  background-size: contain;
+}
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--primary-white-color);
