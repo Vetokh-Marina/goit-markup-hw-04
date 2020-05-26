@@ -1,0 +1,197 @@
+/* основной цвет + номер телефона в шапке #757575 */
+/* цвет акцент #2196F3 */
+/* белый #ffffff */
+/* цвет заголовков #212121 */
+/* футер rgba(255,255,255,0.6) */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --accent-section-color: #f5f4fa;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+/*Логотип*/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-web {
+  color: #2196f3;
+}
+.logo-studio {
+  color: black;
+}
+/* Навигация сайта */
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.link:hover,
+.studio :hover,
+.portfolio:hover,
+.contact:hover {
+  color: var(--accent-text-color);
+}
+/* Герой */
+
+.hero {
+  background-color: rgba(47, 48, 58, 0.8);
+  /* outline: 2px solid tomato; */
+  text-align: center;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
+  padding-top: 200px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+/* Наши преимущества */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.section h2 {
+  margin: 0 0 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.advant {
+  border-bottom: 1px solid #ececec;
+}
+.advant-link {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.advant-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.advant-text {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.advant-element:not(:last-child) {
+  margin-right: 30px;
+}
+.list .advant-element {
+  width: 270px;
+}
+.list .advant-list {
+  display: flex;
+}
+/* Чем мы занимаемся */
+.doing-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  color: var(--primary-white-color);
+}
+.doing-element:not(:last-child) {
+  margin-right: 30px;
+}
+.doing-list .doing-element {
+  width: 370px;
+  border-radius: 0px 0px 4px 4px;
+}
+/* Наша команда */
+.team {
+  background-color: var(--accent-section-color);
+}
+.team-position {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  columns: var(--primary-text-color);
+}
+.team-title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-element {
+  background-color: var(--primary-white-color);
+  width: 270px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.team-element:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list .slinks {
+  justify-content: space-evenly;
+  padding-bottom: 36px;
+}
+/* Клиенты */
+.klient-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.klient-element:not(:last-child) {
+  margin-right: 30px;
+}
