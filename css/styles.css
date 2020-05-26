@@ -85,6 +85,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+/* Фон с градиентом в секции герой */
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -118,7 +119,7 @@ body {
 .advant {
   border-bottom: 1px solid #ececec;
 }
-.advant-link {
+/* .advant-link {
   display: flex;
   justify-content: center;
   margin: 0px 0px 30px;
@@ -126,6 +127,33 @@ body {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+} */
+.advant-element::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin: 0px 0px 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+/* Альтернативный вариант добавление картинки через псевдоэлемент
+.advant-element:nth-child(1)::before {
+  background-image: url(../img/antenna.svg);
+} */
+.icon-antenna::before {
+  background-image: url(../img/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../img/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../img/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg);
 }
 .advant-title {
   margin-top: 30px;
