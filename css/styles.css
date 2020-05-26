@@ -138,6 +138,7 @@ body {
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
+  background-size: 70px;
 }
 /* Альтернативный вариант добавление картинки через псевдоэлемент
 .advant-element:nth-child(1)::before {
