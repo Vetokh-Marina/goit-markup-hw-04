@@ -19,31 +19,7 @@
 *::after {
   box-sizing: inherit;
 } */
-.button.primary {
-  border: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-text-color);
-  text-decoration: none;
-  border-radius: 4px;
-  margin-bottom: 50px;
-  padding: 11px 32px;
-  display: inline-flex;
-  min-width: 136px;
-}
-/* Добавление иконки на кнопку */
-.button.primary::after{
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url('../img/icon\ send.svg');
-  background-size: contain;
-}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--primary-white-color);
@@ -123,7 +99,7 @@ p {
 }
 /* Навигация сайта */
 .site-nav .link {
-  display: block;
+  display: inline-flex;;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -138,6 +114,28 @@ p {
   display: flex;
   margin-left: 86px;
 }
+.mail.link::before{
+  content: "";
+  width: 16px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url('../img/email.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.phone.link::before{
+  content: "";
+  width: 10px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url('../img/phone.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 /* Альтернативный вариант */
 /* .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -147,7 +145,8 @@ p {
 }
 /* Cont nav */
 .cont-nav {
-  display: flex;
+  display: inline-flex;
+  align-items: baseline;
   margin-left: auto;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -167,6 +166,31 @@ p {
 .portfolio:focus,
 .contact:hover {
   color: var(--accent-text-color);
+}
+.button.secondary{ 
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  padding: 10px 29px;
+  display: inline-flex;
+  min-width: 200px;
+}
+/* Добавление иконки на кнопку */
+.button.secondary::after{
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url('../img/icon\ send.svg');
+  background-size: contain;
 }
 /* Футер */
 footer {
@@ -234,7 +258,6 @@ footer {
     border-color: rgba(255, 255, 255, 0.3);
     border-image: initial;
 }
-
 .copyringht {
   color: rgba(255, 255, 255, 0.4);
   margin-top: 0;
