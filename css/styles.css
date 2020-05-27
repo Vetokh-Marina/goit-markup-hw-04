@@ -96,7 +96,7 @@ body {
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url('../img/header_img.jpg');
+    url('../img/studiya/header_img.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -144,16 +144,16 @@ body {
   background-image: url(../img/antenna.svg);
 } */
 .icon-antenna::before {
-  background-image: url(../img/antenna.svg);
+  background-image: url(../img/studiya/antenna.svg);
 }
 .icon-clock::before {
-  background-image: url(../img/clock.svg);
+  background-image: url(../img/studiya/clock.svg);
 }
 .icon-diagram::before {
-  background-image: url(../img/diagram.svg);
+  background-image: url(../img/studiya/diagram.svg);
 }
 .icon-astronaut::before {
-  background-image: url(../img/astronaut.svg);
+  background-image: url(../img/studiya/astronaut.svg);
 }
 .advant-title {
   margin-top: 30px;

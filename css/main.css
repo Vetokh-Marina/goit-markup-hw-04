@@ -120,7 +120,7 @@ p {
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url('../img/email.svg');
+  background-image: url('../img/header/email.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -131,7 +131,7 @@ p {
   height: 15px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url('../img/phone.svg');
+  background-image: url('../img/header/phone.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -189,7 +189,7 @@ p {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url('../img/footer/icon\ send.svg');
+  background-image: url('../img/footer/icon_send.svg');
   background-size: contain;
 }
 /* Футер */
