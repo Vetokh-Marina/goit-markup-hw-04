@@ -151,6 +151,10 @@ p {
   font-size: 14px;
   letter-spacing: 0.02em;
 }
+.cont-nav .link {
+  display: inline-flex;
+  align-items: center;
+}
 .cont-nav .item + .item {
   margin-left: 50px;
 }
