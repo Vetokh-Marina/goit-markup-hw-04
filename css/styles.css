@@ -133,7 +133,6 @@ body {
   content: '';
   height: 120px;
   margin: 0px 0px 30px;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;

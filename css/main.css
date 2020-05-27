@@ -146,7 +146,7 @@ p {
 /* Cont nav */
 .cont-nav {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   margin-left: auto;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -189,7 +189,7 @@ p {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url('../img/icon\ send.svg');
+  background-image: url('../img/footer/icon\ send.svg');
   background-size: contain;
 }
 /* Футер */
@@ -230,6 +230,44 @@ footer {
   line-height: 1.14;
   text-transform: uppercase;
 }
+/* Добавляет фон для иконок соц.сетей в футере */
+.slikns-links{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.slikns-links:hover{
+  background-color: var(--accent-text-color);
+}
+/* Добаление иконок соц.сетей */
+.icon-instagram{
+  background-image: url(../img/footer/instagram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+.icon-twitter{
+  background-image: url(../img/footer/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.icon-facebook{
+  background-image: url(../img/footer/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.icon-linkedln{
+  background-image: url(../img/footer/linkedin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+/* Добавление отступов каждому элементу списка соц.сетей */
   .slikns-links:not(:last-child) {
     margin-right: 10px;
 }
