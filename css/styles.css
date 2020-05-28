@@ -125,15 +125,6 @@ body {
 .advant {
   border-bottom: 1px solid #ececec;
 }
-/* .advant-link {
-  display: flex;
-  justify-content: center;
-  margin: 0px 0px 30px;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-} */
 .advant-element::before {
   display: block;
   content: '';
@@ -248,6 +239,48 @@ body {
 .list .slinks {
   justify-content: space-evenly;
   padding-bottom: 36px;
+}
+/* Добавляет фон для иконок соц.сетей в секции Команда */
+.link-slink {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.link-slink:hover {
+  background-color: var(--accent-text-color);
+}
+.instagram-icon:hover {
+  background-image: url(../img/footer/instagram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+/* Добавляет иконки соц.сетей */
+.instagram-icon {
+  background-image: url(../img/studiya/instagram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 44px;
+}
+.twitter-icon {
+  background-image: url(../img/studiya/twitter1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 44px;
+}
+.facebook-icon {
+  background-image: url(../img/studiya/facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 44px;
+}
+.linkedln-icon {
+  background-image: url(../img/studiya/linkedIn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 44px;
 }
 /* Клиенты */
 .klient-element {
