@@ -110,11 +110,29 @@ p {
   line-height: 1;
   letter-spacing: 0.02em;
 }
+
 .site-nav {
   display: flex;
   margin-left: 86px;
 }
-.mail.link::before{
+.icon-mail{
+  fill: var(--primary-text-color);
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.icon-phone{
+  fill: var(--primary-text-color);
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+.mail:hover ,.phone:hover
+.mail:focus ,.phone:focus{
+  color: var(--accent-text-color);
+}
+
+/* .mail.link::before{
   content: "";
   width: 16px;
   height: 11px;
@@ -124,8 +142,8 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.phone.link::before{
+} */
+/* .phone.link::before{
   content: "";
   width: 10px;
   height: 15px;
@@ -135,7 +153,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 /* Альтернативный вариант */
 /* .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -162,6 +180,9 @@ p {
   text-decoration: none;
   color: var(--primary-text-color);
 }
+.site-nav .current{
+  color: var(--accent-text-color);
+}
 .link:hover,
 .link:focus,
 .studio :hover,
@@ -187,14 +208,31 @@ p {
   display: inline-flex;
   min-width: 200px;
 }
-/* Добавление иконки на кнопку */
-.button.secondary::after{
+.button.secondary .icon-button{
+  fill:var(--primary-white-color);
+}
+.button.secondary:hover{
+  background-color:var(--primary-white-color);
+  color:var(--accent-text-color);
+  fill:var(--accent-text-color);
+}
+.button.secondary:hover .icon-button{
+  fill: var(--accent-text-color);
+}
+/* Добавление иконки на кнопку через пседоэлементы */
+/* .button.secondary::after{
   content: "";
   width: 24px;
   height: 24px;
   margin-left: 10px;
   background-image: url('../img/footer/icon_send.svg');
   background-size: contain;
+  cursor: pointer;
+} */
+.icon-button{
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 /* Футер */
 footer {

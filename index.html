@@ -26,21 +26,31 @@
 
         <ul class="site-nav list">
           <li class="studio item">
-            <a href="./index.html" class="link">Студия</a>
+            <a href="./index.html" class="link current">Студия</a>
           </li>
           <li class="portfolio item">
             <a href="./portfolio.html" class="link">Портфолио</a>
           </li>
-          <li class="contact item"><a href="" class="link">Контакты </a></li>
+          <li class="contact item">
+            <a href="" class="link">Контакты </a>
+          </li>
         </ul>
         <ul class="cont-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="mail link"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="mail link">
+              <svg class="icon-mail" width="16" height="12">
+                <use href="./img/symbol-defs.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="phone link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="phone link">
+              <svg class="icon-phone" width="10" height="15">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </nav>
@@ -302,14 +312,14 @@
           <ul class="klient-list list">
             <li class="klient-element">
               <a href="">
-                <svg>
+                <svg width="45" height="50">
                   <use href="./img/symbol-defs.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
             <li class="klient-element">
               <a href="">
-                <svg>
+                <svg width="45" height="50">
                   <use href="./img/symbol-defs.svg#icon-client2"></use>
                 </svg>
                 <!-- <img src="./img/studiya/client2.svg" alt="Клиент2" /> -->
@@ -317,7 +327,7 @@
             </li>
             <li class="klient-element">
               <a href="">
-                <svg>
+                <svg width="45" height="50">
                   <use href="./img/symbol-defs.svg#icon-client3"></use>
                 </svg>
                 <!-- <img src="./img/studiya/client3.svg" alt="Клиент3" /> -->
@@ -333,7 +343,7 @@
             </li>
             <li class="klient-element">
               <a href="">
-                <svg>
+                <svg width="45" height="50">
                   <use href="./img/symbol-defs.svg#icon-client5"></use>
                 </svg>
                 <!-- <img src="./img/studiya/client5.svg" alt="Клиент5" /> -->
@@ -341,7 +351,7 @@
             </li>
             <li class="klient-element">
               <a href="">
-                <svg>
+                <svg width="45" height="50">
                   <use href="./img/symbol-defs.svg#icon-client6"></use>
                 </svg>
                 <!-- <img src="./img/studiya/client6.svg" alt="Клиент6" /> -->
@@ -390,7 +400,12 @@
           <p class="slikns-text">подпишитесь на рассылку</p>
           <div class="sub-container">
             <p class="email-input">E-mail</p>
-            <a href="#" class="button secondary">Подписаться</a>
+            <a href="#" class="button secondary">
+              Подписаться
+              <svg class="icon-button" widht="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-icon_send"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
