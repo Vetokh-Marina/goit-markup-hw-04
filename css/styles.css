@@ -246,24 +246,26 @@ body {
   padding-bottom: 36px;
 }
 /* Добавляет фон для иконок соц.сетей в секции Команда */
-.link-slink {
-  display: inline-block;
+.slinks .slinks-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   width: 44px;
   background-color: #ffffff;
   border-radius: 50%;
 }
-.link-slink:hover {
+.slinks .slinks-item:hover {
   background-color: var(--accent-text-color);
 }
-.instagram-icon:hover {
-  background-image: url(../img/footer/instagram.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
+.slinks .icon-slink {
+  fill: var(--accent-icon-color);
+}
+.slinks .slinks-item:hover .icon-slink {
+  fill: var(--primary-white-color);
 }
 /* Добавляет иконки соц.сетей */
-.instagram-icon {
+/* .instagram-icon {
   background-image: url(../img/studiya/instagram.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -286,7 +288,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 44px;
-}
+} */
 /* Клиенты */
 .klient-item {
   display: flex;
