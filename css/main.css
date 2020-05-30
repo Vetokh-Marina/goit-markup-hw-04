@@ -117,20 +117,23 @@ p {
 }
 .icon-mail{
   fill: var(--primary-text-color);
-  width: 16px;
-  height: 12px;
+  width: 20px;
+  height: 15px;
   margin-right: 10px;
 }
 .icon-phone{
   fill: var(--primary-text-color);
-  width: 10px;
-  height: 15px;
+  width: 15px;
+  height: 20px;
   margin-right: 10px;
 }
-.mail:hover ,.phone:hover
-.mail:focus ,.phone:focus{
-  color: var(--accent-text-color);
+.mail:hover .icon-mail,
+.phone:hover .icon-phone,
+.mail:focus .icon-mail,
+.phone:focus .icon-phone{
+  fill: var(--accent-text-color);
 }
+
 
 /* .mail.link::before{
   content: "";
