@@ -130,22 +130,22 @@ body {
 .advant {
   border-bottom: 1px solid #ececec;
 }
-.advant-element::before {
-  display: block;
-  content: '';
-  height: 120px;
+.advant-element {
   margin: 0px 0px 30px;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+.advant-item {
   background-color: #f5f4fa;
+  height: 120px;
   border-radius: 4px;
-  background-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Альтернативный вариант добавление картинки через псевдоэлемент
 .advant-element:nth-child(1)::before {
   background-image: url(../img/antenna.svg);
 } */
-.icon-antenna::before {
+/* .icon-antenna::before {
   background-image: url(../img/studiya/antenna.svg);
 }
 .icon-clock::before {
@@ -156,7 +156,7 @@ body {
 }
 .icon-astronaut::before {
   background-image: url(../img/studiya/astronaut.svg);
-}
+} */
 .advant-title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -288,7 +288,7 @@ body {
   background-size: 44px;
 }
 /* Клиенты */
-.klient-element {
+.klient-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,4 +299,13 @@ body {
 }
 .klient-element:not(:last-child) {
   margin-right: 30px;
+}
+.klient-list .icon-klient {
+  fill: #afb1b8;
+}
+.klient-list .klient-item:hover .icon-klient {
+  fill: var(--accent-text-color);
+}
+.klient-element:hover .klient-item {
+  border-color: var(--accent-text-color);
 }
