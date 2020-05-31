@@ -118,14 +118,10 @@ p {
 }
 .icon-mail{
   fill: var(--primary-text-color);
-  width: 20px;
-  height: 15px;
   margin-right: 10px;
 }
 .icon-phone{
   fill: var(--primary-text-color);
-  width: 15px;
-  height: 20px;
   margin-right: 10px;
 }
 .mail:hover .icon-mail,
