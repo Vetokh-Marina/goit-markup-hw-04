@@ -327,6 +327,10 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 } 
+.icon-slink{
+  width: 20px;
+  height: 20px;
+}
 .email-input {
     margin-top: 0px;
     margin-bottom: 0px;
