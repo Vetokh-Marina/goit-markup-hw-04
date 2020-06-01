@@ -154,6 +154,10 @@ body {
 .advant-element:not(:last-child) {
   margin-right: 30px;
 }
+.icon-advant {
+  width: 70px;
+  height: 70px;
+}
 .list .advant-element {
   width: 270px;
 }
