@@ -211,7 +211,7 @@ p {
 .button.secondary .icon-button{
   fill:var(--primary-white-color);
 }
-.button.secondary:hover{
+.button.secondary:hover, .button.secondary:focus{
   background-color:var(--primary-white-color);
   color:var(--accent-text-color);
   fill:var(--accent-text-color);
@@ -283,7 +283,8 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.slikns-list .icon-slinks:hover{
+.slikns-list .icon-slinks:hover, 
+.slikns-list .icon-slinks:focus{
   background-color: var(--accent-text-color);
 }
 .slikns-list .icon-slinks{
